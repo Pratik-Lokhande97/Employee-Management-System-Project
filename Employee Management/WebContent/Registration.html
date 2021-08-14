@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+
+<style>
+
+body
+{	
+	
+	background-image: url("image2.jpg");
+	background-position: left;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+ 	 
+}
+
+#frmLogin { 
+	margin-top: 5%;
+	margin-left: 50%;
+	border: 2px solid #22b0d4;           
+	background:  #f2f2f;
+	color: white;                            
+	display: inline-block;
+	border-radius: 4px; 
+	box-sizing: border-box;
+}
+
+.form-submit-button {
+	background:#4CAF50;
+	border: 0;
+	padding: 8px 20px;
+	border-radius: 4px;
+	color: black;
+	text-transform: uppercase; 
+}
+
+input{
+	background: rgba(223, 230, 224,0.5);
+}
+
+select{
+	background: rgba(223, 230, 224,0.5);
+}
+
+option{
+	background: rgba(223, 230, 224,0.5);
+}
+
+textarea{
+	background: rgba(223, 230, 224,0.5);
+}
+
+td{
+    background-color: none;
+    color: "white";
+    font-weight:bold;
+    font-size:17px;
+    /*background-color: rgba(219, 205, 204,0.3);*/
+    
+}
+
+table
+{
+	height:50%;
+	width:100%;
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+<form action="RegistrationServlet"method="post" id="frmLogin">
+
+<fieldset>
+<legend><b>Registration Details:</b></legend>
+<table border=0>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FName" size="20" ></td>
+</tr>
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LName" size="20" ></td>
+</tr>
+
+<tr>
+<td>Mobile No</td>
+<td><input type="number" name="Mobile" maxlength="10"></td>
+</tr>
+
+
+<tr>
+<td>Email</td>
+<td><input type="email" name="Email" size="20"/></td>
+</tr>
+
+<tr>
+<td>Create Password</td>
+<td><input type="password" name="pwd" size="20"/></td>
+</tr>
+</table>
+
+<fieldset>
+<legend>Select Gender</legend>
+<input type="radio" name="Gender" value="male">Male
+<br>
+<input type="radio" name="Gender" value="female">Female
+</fieldset>
+
+
+<fieldset>
+<legend>Select ID Proof</legend>
+<input type="checkbox" name="ID" value="AadharCard">Aadhar Card
+<br>
+<input type="checkbox" name="ID" value="PanCard ">Pancard
+<br>
+<input type="checkbox" name="ID" value="VotingCard">Voting Card
+</fieldset>
+
+<fieldset>
+<legend>Address Details</legend>
+<table>
+<tr>
+<td>Address</td>
+<td><textarea name="Address" rows="4" cols="30"></textarea>
+</td>
+</tr>
+
+<tr>
+<td>State</td>
+<td><select name="State">
+<option value="select one">select one</option>
+<option value="Andra">Andhra Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Gujrat">Gujrat</option>
+<option value="Maharashtra">Maharashtra</option>
+</td>
+</tr>
+
+<tr>
+<td>District</td>
+<td><select name="District">
+<option value="select one">select one</option>
+<option value="Thane">Thane</option>
+<option value="Pune">Pune</option>
+<option value="Nashik">Nashik</option>
+<option value="Kolhapur">Kolhapur</option>
+</td>
+</tr>
+</table>
+
+<br>
+<input type="submit" value="Register" align="center" class="form-submit-button">
+<br>
+<br>
+</form>
+</body>
+</html>

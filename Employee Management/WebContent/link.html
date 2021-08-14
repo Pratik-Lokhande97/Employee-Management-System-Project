@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Links</title>
+
+<style>
+
+body
+{
+	background-image: url('image1.jpg');
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+ 	background-attachment: fixed;
+	/*background-color:black;*/
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.tab {
+	
+ 	margin-right: 2.5em;
+}
+
+.space {
+ margin-left: 2.5em;
+}
+
+</style>
+
+</head>
+<body>
+	<a href="Home.jsp" class="tab">Home</a>
+	<!-- <a href="index.html" class="tab">Login</a> -->
+
+	<a href="ProfileServlet" class="tab">Profile</a>
+	<a style= "margin-right:10%;" href="LogoutServlet" >Logout</a>
+	
+</body>
+</html>

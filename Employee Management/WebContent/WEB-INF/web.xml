@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Employee Management</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ServletConfig1</servlet-name>
+    <servlet-class>ServletConfig1</servlet-class>
+    <init-param>
+      <param-name>ID</param-name>
+      <param-value>101</param-value>
+    </init-param>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>jdbc:mysql://localhost:3306/</param-value>
+    </init-param>
+    <init-param>
+      <param-name>database name</param-name>
+      <param-value>pratik_db</param-value>
+    </init-param>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value> </param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ServletConfig1</servlet-name>
+    <url-pattern>/getServletConfig</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletContext1</servlet-name>
+    <servlet-class>ServletContext1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletContext1</servlet-name>
+    <url-pattern>/getServletContext</url-pattern>
+  </servlet-mapping>
+  
+  
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>database name</param-name>
+    <param-value>pratik_db</param-value>
+  </context-param>
+  <context-param>
+    <param-name>username</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+    <param-value> </param-value>
+  </context-param>
+</web-app>

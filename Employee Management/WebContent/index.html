@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+
+body
+{
+	background-image: url('image1.jpg');
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+ 	background-attachment: fixed;
+	/*background-color:black;*/
+}
+
+#frmLogin { 
+	margin-top: 5%;
+	margin-right: 55%;
+	/*border: 5px solid red;*/
+	padding: 20px 50px;
+	background:  #f2f2f;
+	color: white;
+	display: inline-block;
+	border-radius: 4px; 
+	box-sizing: border-box;
+}
+
+.field-group { 
+	margin:15px 50px; 
+}
+
+.input-field {
+	padding: 10px;width: 200px;
+	border: #A3C3E7 1px solid;
+	border-radius: 4px; 
+}
+
+.form-submit-button {
+	background:#4CAF50;
+	border: 0;
+	padding: 8px 20px;
+	border-radius: 4px;
+	color: black;
+	text-transform: uppercase; 
+}
+
+</style>
+</head>
+
+ <body >
+<center>
+<form action="LoginServlet" method="post" id="frmLogin">
+<fieldset>
+	<legend>Login: </legend>
+	
+		<div class="field-group">
+			<div><label for="login">EmailID</label></div>
+			<div><input type="text" name="uname" class="input-field"></div>
+		</div>
+		
+		<div class="field-group">
+			<div><label for="password">Password</label></div>
+			<div><input type="password" name="pwd" class="input-field"></div>
+		</div>
+		
+		<div class="field-group">
+		<div><input type="submit" name="login" value="Login" class="form-submit-button">
+		<input type="reset" name="Clear" value="Clear" class="form-submit-button"></div>
+	</div> 
+	<p>For Register <a href="Registration.html">Click Here</a></p> 
+</fieldset>
+</form>
+</center>
+
+<!-- User ID:
+<input type="text" name="uname">
+<br>
+Password:
+<input type="text" name="pwd">
+<br>
+<input type="submit">
+</form> -->
+
+</body>  
+
+
+ <!-- <body bgcolor="skyblue">
+<form action="RegistrationServlet"method="post">
+<h1>Registration Form</h1>
+<table>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FName" size="20"/></td>
+</tr>
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LName" size="20"/></td>
+</tr>
+
+<tr>
+<td>Mobile No</td>
+<td><input type="number" name="Mobile" maxlength="10"/></td>
+</tr>
+
+
+<tr>
+<td>Email</td>
+<td><input type="email" name="Email" size="35"/></td>
+</tr>
+
+<tr>
+<td>Create Password</td>
+<td><input type="password" name="pwd" size="35"/></td>
+</tr>
+</table>
+
+<fieldset>
+<legend>Select Gender</legend>
+<input type="radio" name="Gender" value="male">Male
+<br>
+<input type="radio" name="Gender" value="female">Female
+</fieldset>
+
+
+<fieldset>
+<legend>Select ID Proof</legend>
+<input type="checkbox" name="ID" value="aadhar">Aadhar Card
+<br>
+<input type="checkbox" name="ID" value="pan">Pancard
+<br>
+<input type="checkbox" name="ID" value="voting">Voting Card
+</fieldset>
+
+<fieldset>
+<legend>Address Details</legend>
+<table>
+<tr>
+<td>Address</td>
+<td><textarea name="Address" rows="4" cols="30"></textarea>
+</td>
+</tr>
+
+<tr>
+<td>State</td>
+<td><select name="State">
+<option value="select one">select one
+<option value="ap">Andhra Pradesh
+<option value="as">Assam
+<option value="guj">Gujrat
+<option value="mh">Maharashtra
+</td>
+</tr>
+
+<tr>
+<td>District</td>
+<td><select name="District">
+<option value="select one">select one
+<option value="thane">Thane
+<option value="pune">Pune
+<option value="nashik">Nashik
+<option value="kolhapur">Kolhapur
+</td>
+</tr>
+</table>
+
+<br>
+<input type="submit" value="Submit Form">
+<br>
+<br>
+</form>
+</body>  -->
+
+
+
+<!-- <body>
+<h2>This is index page</h2>
+<form action="LoginServlet" method="post">
+First Name:
+<input type="text" name="uname">
+<br>
+Password:
+<input type="text" name="pwd">
+<br>
+<input type="submit">
+</form>
+</body> -->
+</html>
